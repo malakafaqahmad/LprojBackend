@@ -1,4 +1,4 @@
-import { generateToken } from '../authentication/jwt/generateToken.js';
+import { generateToken } from '../authentication/jwt/tokens.js';
 
 export const Signup = (req, res) => {
   console.log("Signup request received");
