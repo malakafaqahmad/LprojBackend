@@ -8,7 +8,8 @@ export const config = {
   postUrl: process.env.POSTURL,
   jwtToken: process.env.JWT_SECRET,
   geminiApiKey: process.env.GEMINI_API_KEY,
-  mongodbUri: process.env.MONGODBURI
+  mongodbUri: process.env.MONGODBURI,
+  groqApiKey: process.env.GROQAPIKEY
 };
 
 export default config;

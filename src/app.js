@@ -5,6 +5,9 @@ import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
 import authRoutes from './routes/authRoutes.js';
 import protectedRoutes from './routes/protectedRoutes.js';
+import postLinkedInArticle from './tools/linkedinTools/simplePost.js';
+import postLinkedIn from './tools/linkedinTools/linkPost.js';
+
 
 dotenv.config();
 
@@ -19,7 +22,8 @@ app.use('/protected', protectedRoutes);
 
 
 app.get('/', (req, res) =>{
-  res.send('Hello, there!');
+  postLinkedIn('first linkedin ghjkl;dfghjk post', 'urn:li:person:2DyPgn56tP');
+  res.send('created post successfully');
 })
 
 
