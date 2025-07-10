@@ -1,8 +1,10 @@
 import { generateToken } from '../authentication/jwt/tokens.js';
+import config from '../config/config.js';
 
 export const Signup = (req, res) => {
   console.log("Signup request received");
-  res.send("Still in Progress, will be done soon!");
+  
+  res.send(config.groqApiKey);
 };
 
 

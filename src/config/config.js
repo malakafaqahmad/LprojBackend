@@ -9,7 +9,7 @@ export const config = {
   jwtToken: process.env.JWT_SECRET,
   geminiApiKey: process.env.GEMINI_API_KEY,
   mongodbUri: process.env.MONGODBURI,
-  groqApiKey: process.env.GROQAPIKEY
+  groqApiKey: process.env.GROQ_API_KEY
 };
 
 export default config;
