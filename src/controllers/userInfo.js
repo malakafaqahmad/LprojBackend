@@ -15,7 +15,7 @@ export async function getUserInfo(req, res) {
     });
 
     console.log('User info fetched successfully:', response.data);
-    // return response.data;
+    
     res.send(response.data);
   } catch (error) {
     console.error('Error fetching user info:', error.message);
