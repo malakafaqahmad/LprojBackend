@@ -1,5 +1,5 @@
 import { generateGeminiContent } from '../tools/AiModels/Gemini.js';
-
+import config from '../config/config.js';
 
 const geminiMiddleware = async (req, res) => {
   const { content } = req.body;
@@ -8,6 +8,8 @@ const geminiMiddleware = async (req, res) => {
   }
 
   try {
+    console.log(content);
+    console.log("the gemini api key is ", config.geminiApiKey);
     const geminiResponse = await generateGeminiContent(content);
     res.json({ success: true, geminiResponse });
   }

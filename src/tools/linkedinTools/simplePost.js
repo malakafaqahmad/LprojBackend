@@ -22,7 +22,7 @@ function createLinkedInPostPayload(text, authorUrn) {
 
 // Function to post to LinkedIn
 const postLinkedIn = async (text) => {
-  authorUrn = "urn:li:person:2DyPgn56tP";
+  const authorUrn = config.authURN;
   const payload = createLinkedInPostPayload(text, authorUrn);
 
   try {

@@ -5,8 +5,6 @@ import config from '../config/config.js';
 export async function getUserInfo(req, res) {
   const accessToken = config.accessToken;
   try {
-    console.log('Fetching user info with URL:', config.userInfoUrl);
-    console.log('Access Token:', accessToken);
     const response = await axios.get(config.userInfoUrl, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
