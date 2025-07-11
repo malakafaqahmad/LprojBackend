@@ -33,7 +33,6 @@ function createLinkedInArticlePayload(authorUrn, text, articleUrl, articleTitle,
 
 const postLinkedInArticle = async (text, articleUrl, articleTitle, articleDescription) => {
   const authorUrn = config.authURN;
-  console.log("the author urn is ", authorUrn);
   const payload = createLinkedInArticlePayload(authorUrn, text, articleUrl, articleTitle, articleDescription);
 
   try {
