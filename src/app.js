@@ -17,6 +17,8 @@ app.use(cookieParser());
 app.use('/auth', authRoutes);
 app.use('/protected', protectedRoutes);
 
-
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+})
 
 export default app;

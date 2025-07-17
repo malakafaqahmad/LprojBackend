@@ -2,9 +2,9 @@
 import express from 'express';
 import { verifyUser } from '../Middleware/authMiddleware.js';
 import { getUserInfo } from '../controllers/userInfo.js';
-import geminiMiddleware from '../Middleware/geminiMiddleware.js';
-import groqMiddleware from '../Middleware/groqMiddleware.js';
-import linkedinMiddleware from '../Middleware/linkedinMidlewar.js';
+import geminiMiddleware from '../Middleware/linkedin/geminiMiddleware.js';
+import groqMiddleware from '../Middleware/linkedin/groqMiddleware.js';
+import linkedinMiddleware from '../Middleware/linkedin/linkedinMidlewar.js';
 
 
 const router = express.Router();

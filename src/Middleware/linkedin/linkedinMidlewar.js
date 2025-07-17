@@ -1,5 +1,5 @@
-import linkPost from '../tools/linkedinTools/simplePost.js';
-import linkPostArticle from '../tools/linkedinTools/linkPost.js';
+import linkPost from '../../tools/linkedinTools/simplePost.js';
+import linkPostArticle from '../../tools/linkedinTools/linkPost.js';
 
 
 const linkedinMiddleware = async (req, res) => {

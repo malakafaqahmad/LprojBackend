@@ -1,4 +1,4 @@
-import { generateToken } from '../authentication/jwt/tokens.js';
+import { generateTokenlogin } from '../authentication/jwt/tokens.js';
 import config from '../config/config.js';
 
 export const Signup = (req, res) => {
@@ -14,7 +14,7 @@ export const Signin = (req, res) => {
   const { username, password } = req.body;
 
   if (username === "u2022672@giki.edu.pk" && password === "pass") {
-    const token = generateToken(username);
+    const token = generateTokenlogin(username);
     res.status(200).json({ message: "Signin was successful!", token });  
   } else {
     res.status(401).json({ message: "Invalid credentials try again"});

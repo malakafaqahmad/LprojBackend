@@ -1,5 +1,5 @@
-import { generateGeminiContent } from '../tools/AiModels/Gemini.js';
-import config from '../config/config.js';
+import { generateGeminiContent } from '../../tools/AiModels/Gemini.js';
+import config from '../../config/config.js';
 
 const geminiMiddleware = async (req, res) => {
   const { content } = req.body;

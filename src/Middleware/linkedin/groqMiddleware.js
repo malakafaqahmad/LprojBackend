@@ -1,4 +1,4 @@
-import { getGroqChatCompletion } from '../tools/AiModels/chatGroq.js';
+import { getGroqChatCompletion } from '../../tools/AiModels/chatGroq.js';
 
 
 const groqMiddleware = async (req, res,) => {
